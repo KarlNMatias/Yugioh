@@ -1,8 +1,9 @@
 project:
   type: website
+  output-dir: docs
 
 website:
-  title: "POT OF GREED"
+  title: "POT OF GREED! Data Hub"
   navbar:
     left:
       - text: "Home"
@@ -12,8 +13,8 @@ website:
       - text: "About"
         href: about.qmd
     right:
-      - text: "Yu-Gi-Oh! Website"
-        href: https://your-main-website-link-here.com
+      - text: "Back to My Website"
+        href: https://karlnmatias.github.io/Yugioh/
 
 format:
   html:
