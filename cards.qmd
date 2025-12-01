@@ -1,0 +1,58 @@
+---
+title: "Check your cards!"
+---
+
+<div class="main-content">
+::: card-gallery
+<img src="images/Wiz.jpeg" 
+     alt="Time Wizard" 
+     class="card-img"/>
+
+<img src="images/Pot.jpeg" 
+     alt="Pot of Greed" 
+     class="card-img"/>
+     
+<img src="images/blueyes.jpeg" 
+     alt="Pot of Greed" 
+     class="card-img"/>
+     
+<img src="images/Kuri.jpeg" 
+     alt="Pot of Greed" 
+     class="card-img"/>
+     
+<img src="images/Dark.jpeg" 
+     alt="Pot of Greed" 
+     class="card-img"/>
+     
+<img src="images/Magician.jpeg" 
+     alt="Pot of Greed" 
+     class="card-img"/>
+     
+<img src="images/toon.jpeg" 
+     alt="Pot of Greed" 
+     class="card-img"/>
+     
+<img src="images/Exodia.jpeg" 
+     alt="Pot of Greed" 
+     class="card-img"/>
+     
+<img src="images/toondragon.jpeg" 
+     alt="Pot of Greed" 
+     class="card-img"/>
+     
+<img src="images/gator.jpeg" 
+     alt="Pot of Greed" 
+     class="card-img"/>
+     
+<img src="images/celtic.jpeg" 
+     alt="Pot of Greed" 
+     class="card-img"/>
+     
+<img src="images/poly.jpeg" 
+     alt="Pot of Greed" 
+     class="card-img"/>
+:::
+
+[Back to Home](index.qmd)
+
+</div>

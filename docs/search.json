@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Greed Hub",
+    "title": "Welcome to Greed Hub",
     "section": "",
-    "text": "Welcome to the POT OF GREED! Data Hub\nJust like the Pot of Greed spell card use this website to draw your cards and build your deck!\n\n\n\nPot of Greed\n\n\nData source: https://www.kaggle.com/datasets/archanghosh/yugioh-database\nGo to Card Statistics\nAbout This Project"
+    "text": "Welcome to Greed Hub\nJust like the Pot of Greed spell card use this website to draw your cards and build your deck!\n\n\n\nPot of Greed\n\n\nData source: https://www.kaggle.com/datasets/archanghosh/yugioh-database\nGo to Card Statistics\nAbout This Project"
   },
   {
     "objectID": "index.html#data-and-setup",
@@ -53,14 +53,14 @@
     "href": "about.html#data-source",
     "title": "About This Project",
     "section": "Data Source",
-    "text": "Data Source\n\nOriginal dataset: https://www.kaggle.com/datasets/archanghosh/yugioh-database\nData set owners: Archan Ghosh and Madhurima Maji\n\nThis dataset contains:\n\nCard name\n\nCard type (Monster, Spell, Trap, etc.)\n\nAttribute (DARK, LIGHT, FIRE…)\n\nAttack and defense values\n\nLevel, rank, and other stats\n\nAll visuals and summaries on this site come from the cleaned dataset and card images are taken from google."
+    "text": "Data Source\n\nOriginal dataset: https://www.kaggle.com/datasets/archanghosh/yugioh-database\nData set owners: Archan Ghosh and Madhurima Maji\n\nThis data contains:\n\nCard name\n\nCard type (Monster, Spell, Trap)\n\nAttribute (DARK, LIGHT, FIRE, Mech,)\n\nAttack and defense values\n\nLevel, rank, and other stats\n\nAll visuals and summaries on this site come from the cleaned dataset and card images are taken from google."
   },
   {
     "objectID": "about.html#what-was-done",
     "href": "about.html#what-was-done",
     "title": "About This Project",
     "section": "What Was Done",
-    "text": "What Was Done\n\nStandardized column\nRemoved or converted missing values\n\nSeparated combined fields (ATK/DEF and ATK/LINK)\n\nConverted level, rank, and pendulum scale to numeric values\n\nCleaned text fields (rarity, card type, attribute)\n\nBack to Home"
+    "text": "What Was Done\n\nStandardized column\nRemoved or converted missing values\n\nSeparated combined fields (ATK/DEF and ATK/LINK)\n\nConverted level, rank, and pendulum scale to numeric values\n\nCleaned text fields (rarity, card type, attribute)\nMake photos intractable\nCreate visuals for data\n\nBack to Home"
   },
   {
     "objectID": "about.html#visuals-included",
@@ -103,5 +103,40 @@
     "title": "Visuals",
     "section": "Card Lists",
     "text": "Card Lists\n\n\n\n\n\n\n\n\n\n\n\n\n\ncard_name\ncard_type\nattribute\natk\ndef\nlevel\n\n\n\n\nBlackwing - Shura the Blue Flame\nMonster\nDARK\n1800\n1200\n4\n\n\nBlue Dragon Ninja\nMonster\nWATER\n2100\n1200\n5\n\n\nBlue Duston\nMonster\nWATER\n0\n1000\n1\n\n\nBlue Rose Dragon\nMonster\nDARK\n1600\n1200\n4\n\n\nBlue Thunder T-45\nMonster\nLIGHT\n1700\n1000\n4\n\n\nBlue-Blooded Oni\nMonster\nDARK\n1000\n1700\n4\n\n\nBlue-Eyes Jet Dragon\nMonster\nLIGHT\n3000\n0\n8\n\n\nBlue-Eyes Spirit Dragon\nMonster\nLIGHT\n2500\n3000\n9\n\n\nBlue-Eyes Toon Dragon\nMonster\nLIGHT\n3000\n2500\n8\n\n\nBlue-Eyes Twin Burst Dragon\nMonster\nLIGHT\n3000\n2500\n10\n\n\nBlue-Eyes Tyrant Dragon\nMonster\nLIGHT\n3400\n2900\n8\n\n\nBlue-Eyes Ultimate Dragon\nMonster\nLIGHT\n4500\n3800\n12\n\n\nBlue-Eyes White Dragon\nMonster\nLIGHT\n3000\n2500\n8\n\n\nBlue-Eyes White Dragon\nMonster\nLIGHT\n3000\n2500\n8\n\n\nBlue-Eyes White Dragon\nMonster\nLIGHT\n3000\n2500\n8\n\n\nBlue-Winged Crown\nMonster\nWIND\n1600\n1200\n4\n\n\nBluebeard, the Plunder Patroll Shipwright\nMonster\nWATER\n500\n1000\n4\n\n\nBluebeard, the Plunder Patroll Shipwright\nMonster\nWATER\n500\n1000\n4\n\n\nCelestial Wolf Lord, Blue Sirius\nMonster\nDARK\n2400\n1500\n6\n\n\nKagemusha of the Blue Flame\nMonster\nEARTH\n800\n400\n2\n\n\nLost Blue Breaker\nMonster\nWATER\n1400\n0\n3\n\n\nLunalight Blue Cat\nMonster\nDARK\n1600\n1200\n4\n\n\nLyrilusc - Ensemblue Robin\nMonster\nWIND\n0\n0\nNA\n\n\nMarincess Blue Slug\nMonster\nWATER\nNA\nNA\nNA\n\n\nMarincess Blue Tang\nMonster\nWATER\n1500\n1200\n4\n\n\nMaster with Eyes of Blue\nMonster\nLIGHT\n300\n1200\n1\n\n\nMecha Phantom Beast Blue Impala\nMonster\nWIND\n1400\n1100\n3\n\n\nMecha Phantom Beast Blue Impala\nMonster\nWIND\n1400\n1100\n3\n\n\nMekk-Knight Blue Sky\nMonster\nLIGHT\n2000\n2500\n5\n\n\nOjama Blue\nMonster\nLIGHT\n0\n1000\n2\n\n\nOut of the Blue\nSpell\nNA\nNA\nNA\nNA\n\n\nPriestess with Eyes of Blue\nMonster\nLIGHT\n0\n0\n1\n\n\nProtector with Eyes of Blue\nMonster\nLIGHT\n800\n1300\n1\n\n\nSage with Eyes of Blue\nMonster\nLIGHT\n0\n1500\n1\n\n\nSkilled Blue Magician\nMonster\nLIGHT\n1800\n1800\n4\n\n\nSuperheavy Samurai Blue Brawler\nMonster\nEARTH\n0\n2000\n4\n\n\nVision with Eyes of Blue\nSpell\nNA\nNA\nNA\nNA"
+  },
+  {
+    "objectID": "cards.html",
+    "href": "cards.html",
+    "title": "Check your cards!",
+    "section": "",
+    "text": "Back to Home"
+  },
+  {
+    "objectID": "cards.html#time-wizard",
+    "href": "cards.html#time-wizard",
+    "title": "Cards",
+    "section": "",
+    "text": "Time Wizard"
+  },
+  {
+    "objectID": "cards.html#pot-of-greed",
+    "href": "cards.html#pot-of-greed",
+    "title": "Cards",
+    "section": "",
+    "text": "Pot of Greed"
+  },
+  {
+    "objectID": "about.html#work",
+    "href": "about.html#work",
+    "title": "About This Project",
+    "section": "Work",
+    "text": "Work\n\nStandardized column\nRemoved or converted missing values\n\nSeparated combined fields (ATK/DEF and ATK/LINK)\n\nConverted level, rank, and pendulum scale to numeric values\n\nCleaned text fields (rarity, card type, attribute)\nMake photos intractable\nCreate visuals for data"
+  },
+  {
+    "objectID": "about.html#links",
+    "href": "about.html#links",
+    "title": "About This Project",
+    "section": "Links",
+    "text": "Links\n\nhttps://www.kaggle.com/datasets/archanghosh/yugioh-database\nhttps://quarto.org/docs/output-formats/html-lightbox-figures.html\nhttps://outof.games/realms/yugioh/cards/\nhttps://codepen.io/nguyenanhtuan/pen/abQMrBY\n\nBack to Home"
   }
 ]

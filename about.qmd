@@ -12,11 +12,11 @@ The goal is to create a website where you can search up a card and see the cards
 - Original dataset: https://www.kaggle.com/datasets/archanghosh/yugioh-database
 - Data set owners: Archan Ghosh and Madhurima Maji
 
-This dataset contains:
+This data contains:
 
 - Card name  
-- Card type (Monster, Spell, Trap, etc.)  
-- Attribute (DARK, LIGHT, FIRE…)  
+- Card type (Monster, Spell, Trap)  
+- Attribute (DARK, LIGHT, FIRE, Mech,)  
 - Attack and defense values  
 - Level, rank, and other stats  
 
@@ -25,12 +25,20 @@ images are taken from google.
 
 ---
 
-## What Was Done
+## Work
 
 - Standardized column
 - Removed or converted missing values  
 - Separated combined fields (ATK/DEF and ATK/LINK)  
 - Converted level, rank, and pendulum scale to numeric values  
-- Cleaned text fields (rarity, card type, attribute)  
+- Cleaned text fields (rarity, card type, attribute)
+- Make photos intractable
+- Create visuals for data
+
+## Links
+- https://www.kaggle.com/datasets/archanghosh/yugioh-database
+- https://quarto.org/docs/output-formats/html-lightbox-figures.html
+- https://outof.games/realms/yugioh/cards/
+- https://codepen.io/nguyenanhtuan/pen/abQMrBY
 
 [Back to Home](index.qmd)

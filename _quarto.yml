@@ -3,17 +3,19 @@ project:
   output-dir: docs
 
 website:
-  title: "POT OF GREED! Data Hub"
+  title: "Draw 2 Cards"
   navbar:
     left:
       - text: "Home"
         href: index.qmd
       - text: "Card Statistics"
         href: stats.qmd
+      - text: "Cards"
+        href: cards.qmd
       - text: "About"
         href: about.qmd
     right:
-      - text: "Back to My Website"
+      - text: "Pot Of Greed"
         href: https://karlnmatias.github.io/Yugioh/
 
 format:
