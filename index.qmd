@@ -1,0 +1,15 @@
+---
+title: "Greed Hub"
+image: images/potofgreed.jpeg
+---
+
+# Welcome to the POT OF GREED! Data Hub
+
+Just like the Pot of Greed spell card use this website to draw your cards and build your deck!
+
+![Pot of Greed](images/potofgreed.jpeg){width="300px"}
+
+**Data source:** https://www.kaggle.com/datasets/archanghosh/yugioh-database
+
+[Go to Card Statistics](stats.qmd)\
+[About This Project](about.qmd)

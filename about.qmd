@@ -1,0 +1,36 @@
+---
+title: "About This Project"
+---
+This project presents a cleaned and visualized Yu-Gi-Oh! card dataset using R, Quarto, ggplot2, and Plotly.  
+
+The goal is to create a website where you can search up a card and see the cards information and be able to create a deck.
+
+---
+
+## Data Source
+
+- Original dataset: https://www.kaggle.com/datasets/archanghosh/yugioh-database
+- Data set owners: Archan Ghosh and Madhurima Maji
+
+This dataset contains:
+
+- Card name  
+- Card type (Monster, Spell, Trap, etc.)  
+- Attribute (DARK, LIGHT, FIRE…)  
+- Attack and defense values  
+- Level, rank, and other stats  
+
+All visuals and summaries on this site come from the cleaned dataset and card
+images are taken from google.
+
+---
+
+## What Was Done
+
+- Standardized column
+- Removed or converted missing values  
+- Separated combined fields (ATK/DEF and ATK/LINK)  
+- Converted level, rank, and pendulum scale to numeric values  
+- Cleaned text fields (rarity, card type, attribute)  
+
+[Back to Home](index.qmd)

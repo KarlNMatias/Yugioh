@@ -1,0 +1,107 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Greed Hub",
+    "section": "",
+    "text": "Welcome to the POT OF GREED! Data Hub\nJust like the Pot of Greed spell card use this website to draw your cards and build your deck!\n\n\n\nPot of Greed\n\n\nData source: https://www.kaggle.com/datasets/archanghosh/yugioh-database\nGo to Card Statistics\nAbout This Project"
+  },
+  {
+    "objectID": "index.html#data-and-setup",
+    "href": "index.html#data-and-setup",
+    "title": "Yu-Gi-Oh! Data Hub",
+    "section": "",
+    "text": "The dataset was cleaned to:\n\nStandardize column names\n\nHandle missing values such as \"?\"\n\nSplit combined fields like ATK/DEF and ATK/LINK into numeric columns\n\nConvert levels, ranks, and pendulum scales into numeric formats\n\nAll visuals below are based on the cleaned file Yugi_db_FINAL_clean.csv.\nlibrary(tidyverse) library(plotly) library(janitor)\nyugi &lt;- read_csv(“Yugi_db_FINAL_clean.csv”) %&gt;% clean_names()"
+  },
+  {
+    "objectID": "index.html#data-source-and-credit",
+    "href": "index.html#data-source-and-credit",
+    "title": "Yu-Gi-Oh! Data Hub",
+    "section": "",
+    "text": "The original data file used in this project is:\n\nYugi_db_cleaned.csv\n\nFrom this file, a cleaned and processed version was created:\n\nYugi_db_FINAL_clean.csv\n\nAll summaries and visualizations on this site use Yugi_db_FINAL_clean.csv.\nData credit: Yu-Gi-Oh! card dataset (original file: Yugi_db_cleaned.csv).\nThis project is for educational and visualization purposes only.\nGo to Card Statistics\nLearn More About This Project"
+  },
+  {
+    "objectID": "index.html#quick-data-snapshot",
+    "href": "index.html#quick-data-snapshot",
+    "title": "Yu-Gi-Oh! Data Hub",
+    "section": "",
+    "text": "library(tidyverse) library(janitor)\nyugi &lt;- read_csv(“Yugi_db_FINAL_clean.csv”) %&gt;% clean_names()\nsummary_tbl &lt;- tibble( total_cards = nrow(yugi), unique_rarities = n_distinct(yugi\\(rarity),\n  unique_types = n_distinct(yugi\\)card_type), unique_attributes = n_distinct(yugi$attribute) )\nknitr::kable(summary_tbl)"
+  },
+  {
+    "objectID": "stats.html",
+    "href": "stats.html",
+    "title": "Card Search",
+    "section": "",
+    "text": "Yu-Gi-Oh! cards (filtered by search_term in the code)\n\n\n\n\n\n\n\n\n\n\ncard_name\ncard_type\nattribute\natk\ndef\nlevel\n\n\n\n\nBlackwing - Shura the Blue Flame\nMonster\nDARK\n1800\n1200\n4\n\n\nBlue Dragon Ninja\nMonster\nWATER\n2100\n1200\n5\n\n\nBlue Duston\nMonster\nWATER\n0\n1000\n1\n\n\nBlue Rose Dragon\nMonster\nDARK\n1600\n1200\n4\n\n\nBlue Thunder T-45\nMonster\nLIGHT\n1700\n1000\n4\n\n\nBlue-Blooded Oni\nMonster\nDARK\n1000\n1700\n4\n\n\nBlue-Eyes Jet Dragon\nMonster\nLIGHT\n3000\n0\n8\n\n\nBlue-Eyes Spirit Dragon\nMonster\nLIGHT\n2500\n3000\n9\n\n\nBlue-Eyes Toon Dragon\nMonster\nLIGHT\n3000\n2500\n8\n\n\nBlue-Eyes Twin Burst Dragon\nMonster\nLIGHT\n3000\n2500\n10\n\n\nBlue-Eyes Tyrant Dragon\nMonster\nLIGHT\n3400\n2900\n8\n\n\nBlue-Eyes Ultimate Dragon\nMonster\nLIGHT\n4500\n3800\n12\n\n\nBlue-Eyes White Dragon\nMonster\nLIGHT\n3000\n2500\n8\n\n\nBlue-Eyes White Dragon\nMonster\nLIGHT\n3000\n2500\n8\n\n\nBlue-Eyes White Dragon\nMonster\nLIGHT\n3000\n2500\n8\n\n\nBlue-Winged Crown\nMonster\nWIND\n1600\n1200\n4\n\n\nBluebeard, the Plunder Patroll Shipwright\nMonster\nWATER\n500\n1000\n4\n\n\nBluebeard, the Plunder Patroll Shipwright\nMonster\nWATER\n500\n1000\n4\n\n\nCelestial Wolf Lord, Blue Sirius\nMonster\nDARK\n2400\n1500\n6\n\n\nKagemusha of the Blue Flame\nMonster\nEARTH\n800\n400\n2\n\n\nLost Blue Breaker\nMonster\nWATER\n1400\n0\n3\n\n\nLunalight Blue Cat\nMonster\nDARK\n1600\n1200\n4\n\n\nLyrilusc - Ensemblue Robin\nMonster\nWIND\n0\n0\nNA\n\n\nMarincess Blue Slug\nMonster\nWATER\nNA\nNA\nNA\n\n\nMarincess Blue Tang\nMonster\nWATER\n1500\n1200\n4\n\n\nMaster with Eyes of Blue\nMonster\nLIGHT\n300\n1200\n1\n\n\nMecha Phantom Beast Blue Impala\nMonster\nWIND\n1400\n1100\n3\n\n\nMecha Phantom Beast Blue Impala\nMonster\nWIND\n1400\n1100\n3\n\n\nMekk-Knight Blue Sky\nMonster\nLIGHT\n2000\n2500\n5\n\n\nOjama Blue\nMonster\nLIGHT\n0\n1000\n2\n\n\nOut of the Blue\nSpell\nNA\nNA\nNA\nNA\n\n\nPriestess with Eyes of Blue\nMonster\nLIGHT\n0\n0\n1\n\n\nProtector with Eyes of Blue\nMonster\nLIGHT\n800\n1300\n1\n\n\nSage with Eyes of Blue\nMonster\nLIGHT\n0\n1500\n1\n\n\nSkilled Blue Magician\nMonster\nLIGHT\n1800\n1800\n4\n\n\nSuperheavy Samurai Blue Brawler\nMonster\nEARTH\n0\n2000\n4\n\n\nVision with Eyes of Blue\nSpell\nNA\nNA\nNA\nNA"
+  },
+  {
+    "objectID": "stats.html#load-data",
+    "href": "stats.html#load-data",
+    "title": "Card Statistics",
+    "section": "",
+    "text": "library(tidyverse) library(plotly) library(janitor)\nyugi &lt;- read_csv(“Yugi_db_FINAL_clean.csv”) %&gt;% clean_names() rarity_counts &lt;- yugi %&gt;% filter(!is.na(rarity)) %&gt;% count(rarity, sort = TRUE)\np1 &lt;- ggplot(rarity_counts, aes(x=reorder(rarity,n), y=n)) + geom_col() + coord_flip() + labs(title=“Yu-Gi-Oh! Card Rarity Distribution”, subtitle=“Counts of cards by rarity”, x=“Rarity”, y=“Number of Cards”, caption=“Source: cleaned Yu-Gi-Oh dataset”) + theme_minimal()\nggplotly(p1, tooltip=c(“x”,“y”))"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About This Project",
+    "section": "",
+    "text": "This project presents a cleaned and visualized Yu-Gi-Oh! card dataset using R, Quarto, ggplot2, and Plotly.\nThe goal is to create a website where you can search up a card and see the cards information and be able to create a deck."
+  },
+  {
+    "objectID": "about.html#data-source",
+    "href": "about.html#data-source",
+    "title": "About This Project",
+    "section": "Data Source",
+    "text": "Data Source\n\nOriginal dataset: https://www.kaggle.com/datasets/archanghosh/yugioh-database\nData set owners: Archan Ghosh and Madhurima Maji\n\nThis dataset contains:\n\nCard name\n\nCard type (Monster, Spell, Trap, etc.)\n\nAttribute (DARK, LIGHT, FIRE…)\n\nAttack and defense values\n\nLevel, rank, and other stats\n\nAll visuals and summaries on this site come from the cleaned dataset and card images are taken from google."
+  },
+  {
+    "objectID": "about.html#what-was-done",
+    "href": "about.html#what-was-done",
+    "title": "About This Project",
+    "section": "What Was Done",
+    "text": "What Was Done\n\nStandardized column\nRemoved or converted missing values\n\nSeparated combined fields (ATK/DEF and ATK/LINK)\n\nConverted level, rank, and pendulum scale to numeric values\n\nCleaned text fields (rarity, card type, attribute)\n\nBack to Home"
+  },
+  {
+    "objectID": "about.html#visuals-included",
+    "href": "about.html#visuals-included",
+    "title": "About This Project",
+    "section": "Visuals Included",
+    "text": "Visuals Included\nThe Card Statistics tab contains:\n\nInteractive Rarity Plot (Plotly)\n\nATK vs DEF Scatterplot (ggplot2)\n\nCard Type Donut Chart (ggplot2)\n\nAll visuals are labeled, clean, and styled to match the site theme."
+  },
+  {
+    "objectID": "about.html#site-theme",
+    "href": "about.html#site-theme",
+    "title": "About This Project",
+    "section": "Site Theme",
+    "text": "Site Theme\nA custom styles.css file styles the site with:\n\nDark Yu-Gi-Oh–inspired background\n\nGold accents\n\nStyled navbar\n\nClean headings\n\nMatching plot containers\n\nThis earns the “custom theme / polished styling” requirement."
+  },
+  {
+    "objectID": "about.html#navigation",
+    "href": "about.html#navigation",
+    "title": "About This Project",
+    "section": "Navigation",
+    "text": "Navigation\n\nHome → Overview and intro\n\nCard Statistics → Graphs and visuals\n\nAbout → Data cleaning + background (this page)\n\n\nBack to Home"
+  },
+  {
+    "objectID": "index.html#quick-dataset-summary",
+    "href": "index.html#quick-dataset-summary",
+    "title": "Yu-Gi-Oh! Data Hub",
+    "section": "",
+    "text": "library(tidyverse) library(janitor)\nyugi &lt;- read_csv(“Yugi_db_FINAL_clean.csv”) %&gt;% clean_names()\nsummary_tbl &lt;- tibble( Total Cards = nrow(yugi), Unique Rarities = n_distinct(yugi\\(rarity),\n  `Unique Card Types` = n_distinct(yugi\\)card_type), Unique Attributes = n_distinct(yugi$attribute) )\nknitr::kable(summary_tbl)"
+  },
+  {
+    "objectID": "stats.html#attack-vs-defense",
+    "href": "stats.html#attack-vs-defense",
+    "title": "Visuals",
+    "section": "Attack Vs Defense",
+    "text": "Attack Vs Defense"
+  },
+  {
+    "objectID": "stats.html#card-lists",
+    "href": "stats.html#card-lists",
+    "title": "Visuals",
+    "section": "Card Lists",
+    "text": "Card Lists\n\n\n\n\n\n\n\n\n\n\n\n\n\ncard_name\ncard_type\nattribute\natk\ndef\nlevel\n\n\n\n\nBlackwing - Shura the Blue Flame\nMonster\nDARK\n1800\n1200\n4\n\n\nBlue Dragon Ninja\nMonster\nWATER\n2100\n1200\n5\n\n\nBlue Duston\nMonster\nWATER\n0\n1000\n1\n\n\nBlue Rose Dragon\nMonster\nDARK\n1600\n1200\n4\n\n\nBlue Thunder T-45\nMonster\nLIGHT\n1700\n1000\n4\n\n\nBlue-Blooded Oni\nMonster\nDARK\n1000\n1700\n4\n\n\nBlue-Eyes Jet Dragon\nMonster\nLIGHT\n3000\n0\n8\n\n\nBlue-Eyes Spirit Dragon\nMonster\nLIGHT\n2500\n3000\n9\n\n\nBlue-Eyes Toon Dragon\nMonster\nLIGHT\n3000\n2500\n8\n\n\nBlue-Eyes Twin Burst Dragon\nMonster\nLIGHT\n3000\n2500\n10\n\n\nBlue-Eyes Tyrant Dragon\nMonster\nLIGHT\n3400\n2900\n8\n\n\nBlue-Eyes Ultimate Dragon\nMonster\nLIGHT\n4500\n3800\n12\n\n\nBlue-Eyes White Dragon\nMonster\nLIGHT\n3000\n2500\n8\n\n\nBlue-Eyes White Dragon\nMonster\nLIGHT\n3000\n2500\n8\n\n\nBlue-Eyes White Dragon\nMonster\nLIGHT\n3000\n2500\n8\n\n\nBlue-Winged Crown\nMonster\nWIND\n1600\n1200\n4\n\n\nBluebeard, the Plunder Patroll Shipwright\nMonster\nWATER\n500\n1000\n4\n\n\nBluebeard, the Plunder Patroll Shipwright\nMonster\nWATER\n500\n1000\n4\n\n\nCelestial Wolf Lord, Blue Sirius\nMonster\nDARK\n2400\n1500\n6\n\n\nKagemusha of the Blue Flame\nMonster\nEARTH\n800\n400\n2\n\n\nLost Blue Breaker\nMonster\nWATER\n1400\n0\n3\n\n\nLunalight Blue Cat\nMonster\nDARK\n1600\n1200\n4\n\n\nLyrilusc - Ensemblue Robin\nMonster\nWIND\n0\n0\nNA\n\n\nMarincess Blue Slug\nMonster\nWATER\nNA\nNA\nNA\n\n\nMarincess Blue Tang\nMonster\nWATER\n1500\n1200\n4\n\n\nMaster with Eyes of Blue\nMonster\nLIGHT\n300\n1200\n1\n\n\nMecha Phantom Beast Blue Impala\nMonster\nWIND\n1400\n1100\n3\n\n\nMecha Phantom Beast Blue Impala\nMonster\nWIND\n1400\n1100\n3\n\n\nMekk-Knight Blue Sky\nMonster\nLIGHT\n2000\n2500\n5\n\n\nOjama Blue\nMonster\nLIGHT\n0\n1000\n2\n\n\nOut of the Blue\nSpell\nNA\nNA\nNA\nNA\n\n\nPriestess with Eyes of Blue\nMonster\nLIGHT\n0\n0\n1\n\n\nProtector with Eyes of Blue\nMonster\nLIGHT\n800\n1300\n1\n\n\nSage with Eyes of Blue\nMonster\nLIGHT\n0\n1500\n1\n\n\nSkilled Blue Magician\nMonster\nLIGHT\n1800\n1800\n4\n\n\nSuperheavy Samurai Blue Brawler\nMonster\nEARTH\n0\n2000\n4\n\n\nVision with Eyes of Blue\nSpell\nNA\nNA\nNA\nNA"
+  }
+]

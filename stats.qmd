@@ -1,0 +1,81 @@
+---
+title: "Card Statistics"
+execute:
+  echo: false
+  warning: false
+  message: false
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+```{r}
+library(tidyverse) 
+library(plotly) 
+library(janitor)
+yugi <- read_csv("Yugi_db_FINAL_clean.csv") %>% clean_names()
+```
+
+## Card Rarity
+
+```{r}
+rarity_counts <- yugi %>%
+filter(!is.na(rarity)) %>%
+count(rarity, sort = TRUE)
+
+p1 <- ggplot(rarity_counts, aes(x = reorder(rarity, n), y = n)) +
+geom_col(fill = "#f5c041") +
+coord_flip() +
+labs(
+title = "Yu-Gi-Oh! Card Rarity Distribution",
+subtitle = "Counts of cards by rarity",
+x = "Rarity",
+y = "Number of Cards",
+caption = "Source: cleaned Yu-Gi-Oh dataset"
+) +
+theme_minimal()
+
+ggplotly(p1, tooltip = c("x", "y"))
+
+```
+
+## Attack Vs Defense
+
+```{r}
+atk_def_clean <- yugi %>%
+filter(!is.na(atk), !is.na(def))
+
+p2 <- ggplot(atk_def_clean, aes(x = atk, y = def, color = rarity)) +
+geom_point(alpha = 0.7) +
+labs(
+title = "Attack vs Defense",
+subtitle = "Interactive ATK vs DEF scatterplot",
+x = "ATK",
+y = "DEF",
+caption = "Source: cleaned dataset"
+) +
+theme_minimal()
+
+ggplotly(p2)
+
+```
+
+---
+title: "Visuals"
+---
+
+## Card Lists
+
+```{r}
+search_term <- "Blue"  
+
+cards_table <- yugi %>%
+  filter(str_detect(card_name, regex(search_term, ignore_case = TRUE))) %>%
+  select(card_name, card_type, attribute, atk, def, level) %>%
+  arrange(card_name)
+
+knitr::kable(
+  cards_table,
+  align = "l"
+)
+```
