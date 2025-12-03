@@ -4,10 +4,10 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  background: radial-gradient(circle at top, #1b1b2f 0, #050816 45%, #000000 100%);
+  background: radial-gradient(circle at top, black 0, black 45%, black 100%);
   background-attachment: fixed;
   background-size: cover;
-  color: #f5f6fa;
+  color: gray;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
@@ -25,32 +25,32 @@ body {
 /* HEADINGS */
 h1, h2, h3 { 
   text-transform: uppercase; 
-  color: #f8f8ff; 
+  color: gray; 
 }
 h1 { 
-  border-bottom: 2px solid #f5c041; 
+  border-bottom: 2px solid yellow; 
   padding-bottom: 0.4rem; 
 }
 
 /* LINKS */
 a { 
-  color: #5dade2; 
+  color: blue; 
   text-decoration: none; 
 }
 a:hover { 
-  color: #f5c041; 
+  color: yellow; 
 }
 
 /* NAVBAR */
 .navbar {
-  background: linear-gradient(90deg, #12122a, #3b0f3f, #12122a) !important;
+  background: linear-gradient(90deg, black, red, black) !important;
   border-bottom: 1px solid rgba(245, 192, 65, 0.4);
 }
 .navbar-dark .navbar-nav .nav-link { 
-  color: #f5f6fa !important; 
+  color: gray !important; 
 }
 .navbar-dark .navbar-nav .nav-link:hover { 
-  color: #f5c041 !important; 
+  color: yellow !important; 
 }
 
 /* CARD GALLERY */
@@ -76,7 +76,7 @@ a:hover {
 .plotly,
 .quarto-figure,
 figure {
-  background: radial-gradient(circle at top, #16162b 0, #050816 55%);
+  background: radial-gradient(circle at top, black 0, black 55%);
   border-radius: 14px;
   padding: 0.75rem;
 }
